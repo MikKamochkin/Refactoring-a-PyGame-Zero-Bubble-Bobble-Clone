@@ -690,6 +690,8 @@ def draw_text(text, y, x=None):
 IMAGE_WIDTH = {"life":44, "plus":40, "health":40}
 
 def draw_status():
+    if not game.player:
+        return
     # Display score, right-justified at edge of screen
     number_width = CHAR_WIDTH[0]
     s = str(game.player.score)
