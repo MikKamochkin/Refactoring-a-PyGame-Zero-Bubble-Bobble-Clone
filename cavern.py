@@ -1,5 +1,6 @@
 # Mikhail Kamochkin
 # 100875940
+# 2/9/2026
 # Forked from: https://github.com/Wireframe-Magazine/Code-the-Classics 
 
 
@@ -7,6 +8,7 @@ from random import choice, randint, random, shuffle
 from enum import Enum
 import pygame, pgzero, pgzrun, sys
 from dataclasses import dataclass
+
 
 # Check Python version number. sys.version_info gives version as a tuple, e.g. if (3,7,2,'final',0) for version 3.7.2.
 # Unlike many languages, Python can compare two tuples in the same way that you can compare numbers.
