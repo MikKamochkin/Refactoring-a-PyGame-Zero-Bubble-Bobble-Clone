@@ -62,14 +62,18 @@ LEVELS = [ ["XXXXX     XXXXXXXX     XXXXX",
             "    XXXXXX        XXXXXX    ",
             "","",""]]
 
+# ===================== INPUT =====================
+
 @dataclass(frozen=True)
 class InputState:
+    """Snapshot of inputs for one frame (includes edge detection)."""
     left: bool
     right: bool
     jump_pressed: bool
     fire_pressed: bool
     fire_held: bool
     pause_pressed: bool
+
 
 
 
@@ -715,6 +719,7 @@ class ScreenBase:
 
 
 class App:
+    """Owns current screen + builds per-frame InputState (edge detection)."""
     def __init__(self):
         self.screen = None
 
