@@ -1,3 +1,8 @@
+# Mikhail Kamochkin
+# 100875940
+# Forked from: https://github.com/Wireframe-Magazine/Code-the-Classics 
+
+
 from random import choice, randint, random, shuffle
 from enum import Enum
 import pygame, pgzero, pgzrun, sys
